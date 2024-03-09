@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              lightgrey: '#959CB6',
+            },
+            fontFamily: {
+              roboto: ['Roboto'],
+              sfpro: ['SF Pro'],
+              sfrounded: ['SF Rounded'],
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body>
+    <div class="container max-w-lg md:max-w-full mx-auto  lg:max-w-full sm:max-w-md">
+      <div class="p-4 sm:p-5 lg:p-4 md:flex md:flex-row md:place-items-end">
+        <div class="md:w-1/2 md:order-last lg:bg-none">
+          <img class="max-w-2md rounded-xl h-[9rem] w-full object-cover object-center sm:w-full sm:object-cover sm:object-center  md:h-[34rem] md:w-full lg:h-[37.5rem] lg:w-full md:object-cover md:traslate-x-[6rem]" src="Art.png" alt="Login Image">
+        </div>
+        <div class="md:w-1/2 lg:w-3/4 md:flex md:flex-col md:justify-center md:items-center">
+          <div class="md:w-[20rem]">
+            <h2 class="font-sfrounded mt-4 md:mt-0 text-[21px] text-[#0C1421] sm:text-[25px] md:text-[29px] lg:text-[33px]">Welcome Back &#128075;</h2>
+            <p class="font-sfpro mt-2 text-[12px] font-light text-[#313957] md:mt-4 sm:text-[14px] md:text-[15px] lg:text-[17px]">Today is a new day. It's your day. You shape it. Sign in to start managing your projects.</p>
+            <form class="font-roboto mt-2 md:mt-4">
+                <label class="text-[12px] font-normal text-[#0C1421] sm:text-[12px] md:text-[13px] lg:text-[14px]" for="email">Email</label><br>
+                <div class="w-45 mt-1 mb-1">
+                    <input class="bg-[#F3F7FB] p-1.5 block w-full text-[12px] sm:text-[12px] md:text-[13px] lg:text-[14px] font-light rounded-md ring-[0.5px] ring-[#D4D7E3]" type="email" id="email" name="email" placeholder="Example@gmail.com">
+                </div>
+                <label class="text-[12px] font-normal text-[#0C1421] sm:text-[12px] md:text-[13px] lg:text-[14px]" for="password">Password</label><br>
+                <div class="w-45 mt-1">
+                    <input class="bg-[#F3F7FB] p-1.5 block w-full text-[12px] sm:text-[12px] md:text-[13px] lg:text-[14px] font-light rounded-md  ring-[0.5px] ring-[#D4D7E3]" type="email" id="email" name="email" placeholder="At least 8 characters">
+                </div>
+            </form>
+            <div class="text-end">
+              <a href="#" class="font-roboto text-[#1E4AE9] text-[12px] sm:text-[12px] md:text-[13px] lg:text-[14px] hover:underline" href="#">Forgot Password?</a>
+            </div>
+            <button class="bg-[#162D3A] font-roboto text-white text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px] p-1 w-full mt-2 rounded-md hover:bg-[#1E4AE9]" type="button">Sign in</button>
+            <p class="font-roboto mt-2 md:mt-4 lg:mt-6 text-[12px] sm:text-[12px] md:text-[13px] lg:text-[14px] text-center text-[#122B31]">Don't you have an account? <span><a href="#" class="text-[#1E4AE9] hover:underline">Sign Up</a></span></p>
+          </div>
+          <div>
+            <footer class="mt-[5.7rem] sm:mt-[4.5rem] md:mt-[3.7rem] lg:mt-[4rem] text-center text-[#959CB6] text-[11px] sm:text-[11px] md:text-[12px] lg:text-[13px] md:my-10">&#169;2023 ALL RIGHTS RESERVED</footer>
+          </div>
+        </div>
+      </div>
+      <div>
+      </div>
+    </div>
+</body>
+</html>

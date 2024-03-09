@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'SF Pro';
+    font-weight: 300;
+    src: url(/assets/fonts/SF-Pro-Display-Regular.otf) format("opentype");
+  }
+  @font-face {
+    font-family: 'SF Rounded';
+    font-weight: 500;
+    src: url(assets/fonts/SF-Pro-Rounded-Bold.otf) format("opentype");
+  }
+}
+
+
+
